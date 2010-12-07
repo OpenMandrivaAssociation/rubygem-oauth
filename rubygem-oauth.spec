@@ -3,7 +3,7 @@
 Summary:	OAuth Core Ruby implementation
 Name:		rubygem-%{oname}
 Version:	0.3.6
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	MIT
 Group:		Development/Ruby
 URL:		http://%{oname}.rubyforge.org/
