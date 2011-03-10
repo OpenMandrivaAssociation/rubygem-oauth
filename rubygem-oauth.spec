@@ -2,8 +2,8 @@
 
 Summary:	OAuth Core Ruby implementation
 Name:		rubygem-%{oname}
-Version:	0.3.6
-Release:	%mkrel 3
+Version:	0.4.4
+Release:	%mkrel 1
 License:	MIT
 Group:		Development/Ruby
 URL:		http://%{oname}.rubyforge.org/
@@ -18,17 +18,14 @@ This is a RubyGem for implementing both OAuth clients and servers in Ruby
 applications.
 
 %prep
+%setup -q
 
 %build
+%gem_build
 
 %install
 rm -rf %{buildroot}
-gem install --local --install-dir %{buildroot}/%{ruby_gemdir} --force %{SOURCE0}
-
-rm -rf %{buildroot}%{ruby_gemdir}/{cache,gems/%{oname}-%{version}/ext}
-
-mv %{buildroot}%{ruby_gemdir}/bin %{buildroot}%{_prefix}
- 
+%{gem_install} --bindir %{buildroot}%{_bindir}
 
 %clean
 rm -rf %{buildroot}
