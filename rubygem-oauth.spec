@@ -63,3 +63,30 @@ rm -rf %{buildroot}
 %{ruby_gemdir}/gems/%{rbname}-%{version}/test/*
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/examples
 %{ruby_gemdir}/gems/%{rbname}-%{version}/examples/*.rb
+
+
+%changelog
+* Thu Mar 10 2011 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.4.4-1
++ Revision: 643381
+- regenerate spec with gem2rpm5
+- new release: 0.4.4
+
+* Fri Dec 17 2010 Rémy Clouard <shikamaru@mandriva.org> 0.3.6-3mdv2011.0
++ Revision: 622496
+- rebuild for new rpm-mandriva-setup
+
+* Tue Dec 07 2010 Oden Eriksson <oeriksson@mandriva.com> 0.3.6-2mdv2011.0
++ Revision: 614774
+- the mass rebuild of 2010.1 packages
+
+  + Per Øyvind Karlsen <peroyvind@mandriva.org>
+    - ooops, revert previous incorrect buildrequires change...
+    - add missing buildrequires
+
+* Thu Feb 04 2010 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.3.6-1mdv2010.1
++ Revision: 500857
+- import rubygem-oauth
+
+
+* Mon Feb  4 2010 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.3.6-1
+- initial release
