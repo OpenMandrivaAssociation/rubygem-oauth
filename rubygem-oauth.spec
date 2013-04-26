@@ -5,10 +5,10 @@ Summary:	OAuth Core Ruby implementation
 Name:		rubygem-%{rbname}
 
 Version:	0.4.4
-Release:	1
+Release:	2
 Group:		Development/Ruby
 License:	MIT
-URL:		http://%{oname}.rubyforge.org/
+URL:		http://%{rbname}.rubyforge.org/
 Source0:	http://rubygems.org/gems/%{rbname}-%{version}.gem
 BuildRequires:	rubygems 
 BuildArch:	noarch
