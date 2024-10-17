@@ -8,7 +8,7 @@ Version:	0.4.4
 Release:	3
 Group:		Development/Ruby
 License:	MIT
-URL:		http://%{rbname}.rubyforge.org/
+URL:		https://%{rbname}.rubyforge.org/
 Source0:	http://rubygems.org/gems/%{rbname}-%{version}.gem
 BuildRequires:	rubygems 
 BuildArch:	noarch
